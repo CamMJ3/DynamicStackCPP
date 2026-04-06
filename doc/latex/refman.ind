@@ -1,0 +1,92 @@
+\begin{theindex}
+
+  \item {\texorpdfstring{$\sim$}{\string~}Stack}
+    \subitem {Stack$<$ T $>$}, \hyperpage{17}
+
+  \indexspace
+
+  \item {Dynamic Stack in C++}, \hyperpage{1}
+
+  \indexspace
+
+  \item {emptyStack}
+    \subitem {Stack$<$ T $>$}, \hyperpage{17}
+
+  \indexspace
+
+  \item {getNext}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+  \item {getSize}
+    \subitem {Stack$<$ T $>$}, \hyperpage{17}
+  \item {getValue}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+
+  \indexspace
+
+  \item {headers Directory Reference}, \hyperpage{11}
+  \item {headers/node.h}, \hyperpage{21}
+  \item {headers/stack.h}, \hyperpage{22}
+
+  \indexspace
+
+  \item {insertNext}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+  \item {insertValue}
+    \subitem {Node$<$ T $>$}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{23}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{23}
+    \subitem {menu}, \hyperpage{24}
+  \item {menu}
+    \subitem {main.cpp}, \hyperpage{24}
+
+  \indexspace
+
+  \item {Node}
+    \subitem {Node$<$ T $>$}, \hyperpage{14}
+  \item {Node$<$ T $>$}, \hyperpage{13}
+    \subitem {getNext}, \hyperpage{15}
+    \subitem {getValue}, \hyperpage{15}
+    \subitem {insertNext}, \hyperpage{15}
+    \subitem {insertValue}, \hyperpage{15}
+    \subitem {Node}, \hyperpage{14}
+
+  \indexspace
+
+  \item {peek}
+    \subitem {Stack$<$ T $>$}, \hyperpage{18}
+  \item {pop}
+    \subitem {Stack$<$ T $>$}, \hyperpage{18}
+  \item {push}
+    \subitem {Stack$<$ T $>$}, \hyperpage{19}
+
+  \indexspace
+
+  \item {README.md}, \hyperpage{23}
+
+  \indexspace
+
+  \item {src Directory Reference}, \hyperpage{11}
+  \item {src/main.cpp}, \hyperpage{23, 24}
+  \item {src/node.cpp}, \hyperpage{26}
+  \item {src/stack.cpp}, \hyperpage{27}
+  \item {Stack}
+    \subitem {Stack$<$ T $>$}, \hyperpage{17}
+  \item {Stack$<$ T $>$}, \hyperpage{16}
+    \subitem {\texorpdfstring{$\sim$}{\string~}Stack}, \hyperpage{17}
+    \subitem {emptyStack}, \hyperpage{17}
+    \subitem {getSize}, \hyperpage{17}
+    \subitem {peek}, \hyperpage{18}
+    \subitem {pop}, \hyperpage{18}
+    \subitem {push}, \hyperpage{19}
+    \subitem {Stack}, \hyperpage{17}
+
+  \indexspace
+
+  \item {Tests}, \hyperpage{3}
+
+\end{theindex}

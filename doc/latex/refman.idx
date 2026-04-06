@@ -1,0 +1,49 @@
+\indexentry{Dynamic Stack in C++@{Dynamic Stack in C++}|hyperpage}{1}
+\indexentry{Tests@{Tests}|hyperpage}{3}
+\indexentry{headers Directory Reference@{headers Directory Reference}|hyperpage}{11}
+\indexentry{src Directory Reference@{src Directory Reference}|hyperpage}{11}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{13}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}|hyperpage}{14}
+\indexentry{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{14}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}|hyperpage}{14}
+\indexentry{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{14}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!Node@{Node}|hyperpage}{14}
+\indexentry{Node@{Node}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{14}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!getNext@{getNext}|hyperpage}{15}
+\indexentry{getNext@{getNext}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!getValue@{getValue}|hyperpage}{15}
+\indexentry{getValue@{getValue}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!insertNext@{insertNext}|hyperpage}{15}
+\indexentry{insertNext@{insertNext}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Node$<$ T $>$@{Node$<$ T $>$}!insertValue@{insertValue}|hyperpage}{15}
+\indexentry{insertValue@{insertValue}!Node$<$ T $>$@{Node$<$ T $>$}|hyperpage}{15}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{16}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!Stack@{Stack}|hyperpage}{17}
+\indexentry{Stack@{Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{17}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}|hyperpage}{17}
+\indexentry{````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{17}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!emptyStack@{emptyStack}|hyperpage}{17}
+\indexentry{emptyStack@{emptyStack}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{17}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!getSize@{getSize}|hyperpage}{17}
+\indexentry{getSize@{getSize}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{17}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!peek@{peek}|hyperpage}{18}
+\indexentry{peek@{peek}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{18}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}|hyperpage}{18}
+\indexentry{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{18}
+\indexentry{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}|hyperpage}{19}
+\indexentry{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}|hyperpage}{19}
+\indexentry{headers/node.h@{headers/node.h}|hyperpage}{21}
+\indexentry{headers/node.h@{headers/node.h}|hyperpage}{21}
+\indexentry{headers/stack.h@{headers/stack.h}|hyperpage}{22}
+\indexentry{headers/stack.h@{headers/stack.h}|hyperpage}{22}
+\indexentry{README.md@{README.md}|hyperpage}{23}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{23}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{23}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{23}
+\indexentry{main.cpp@{main.cpp}!menu@{menu}|hyperpage}{24}
+\indexentry{menu@{menu}!main.cpp@{main.cpp}|hyperpage}{24}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{24}
+\indexentry{src/node.cpp@{src/node.cpp}|hyperpage}{26}
+\indexentry{src/node.cpp@{src/node.cpp}|hyperpage}{26}
+\indexentry{src/stack.cpp@{src/stack.cpp}|hyperpage}{27}
+\indexentry{src/stack.cpp@{src/stack.cpp}|hyperpage}{27}

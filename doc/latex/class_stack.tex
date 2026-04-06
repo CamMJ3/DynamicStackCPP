@@ -1,0 +1,272 @@
+\doxysection{Stack\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\hypertarget{class_stack}{}\label{class_stack}\index{Stack$<$ T $>$@{Stack$<$ T $>$}}
+
+
+{\ttfamily \+\#include $<$stack.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_stack_aefee698059467258bbd79045aca62a63}{Stack}} ()
+\begin{DoxyCompactList}\small\item\em Initializes an empty stack. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{class_stack_a9e7a00875aefbdac560ab189b7bc61d1}{\texorpdfstring{$\sim$}{\string~}\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Clears the stack and releases all dynamically allocated resources. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_stack_a51485f881877aaf1f60732997f898166}{empty\+Stack}} () const
+\begin{DoxyCompactList}\small\item\em Returns true if the stack has no Nodes, and false otherwise. \end{DoxyCompactList}\item 
+int \doxymbox{\hyperlink{class_stack_a2b5f272eaac2bacb40d835886ac3b950}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Returns the number of Nodes in the stack by traversing the list. \end{DoxyCompactList}\item 
+void \doxymbox{\hyperlink{class_stack_a9f674f8e0d76ce2e00a157f2f11bb4e6}{push}} (\doxymbox{\hyperlink{class_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}data)
+\begin{DoxyCompactList}\small\item\em Adds a new \doxylink{class_node}{Node}, with a value, to the top of the stack. \end{DoxyCompactList}\item 
+T \doxymbox{\hyperlink{class_stack_aa2ea0e8c3293648589dd734d52487408}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Deletes the \doxylink{class_node}{Node} associated at the top of the stack. \end{DoxyCompactList}\item 
+T \doxymbox{\hyperlink{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e}{peek}} () const
+\begin{DoxyCompactList}\small\item\em Returns the value of the \doxylink{class_node}{Node} associated at the top of the stack. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Stack$<$ T $>$}
+
+
+Definition at line \doxymbox{\hyperlink{stack_8h_source_l00016}{16}} of file \doxymbox{\hyperlink{stack_8h_source}{stack.\+h}}.
+
+
+
+\label{doc-constructors}
+\Hypertarget{class_stack_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_stack_aefee698059467258bbd79045aca62a63}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}}
+{\footnotesize\ttfamily \label{class_stack_aefee698059467258bbd79045aca62a63} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initializes an empty stack. 
+
+Top is set to nullptr, allowing the stack to be empty. 
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00021}{21}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ top\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_stack_a9e7a00875aefbdac560ab189b7bc61d1}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}}
+\index{````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Stack()}{\string~Stack()}}
+{\footnotesize\ttfamily \label{class_stack_a9e7a00875aefbdac560ab189b7bc61d1} 
+template$<$typename T$>$ \\
+\doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+\texorpdfstring{$\sim$}{\string~}\doxymbox{\hyperlink{class_stack}{Stack}} (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Clears the stack and releases all dynamically allocated resources. 
+
+Deletes all the Nodes stored in the stack, thus releasing all allocated memory. 
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00035}{35}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \doxymbox{\hyperlink{class_stack}{Node<T>}}*\ \doxymbox{\hyperlink{class_stack}{tmp}}\ =\ top;}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{while}\ (\doxymbox{\hyperlink{class_stack}{tmp}}\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00040\ \ \ \ \ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{Node<T>}}*\ \doxymbox{\hyperlink{class_stack}{deleteNode}}\ =\ \doxymbox{\hyperlink{class_stack}{tmp}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{tmp}}\ =\ \doxymbox{\hyperlink{class_stack}{tmp}}-\/>getNext();}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \doxymbox{\hyperlink{class_stack}{deleteNode}};}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+
+
+\label{doc-func-members}
+\Hypertarget{class_stack_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_stack_a51485f881877aaf1f60732997f898166}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!emptyStack@{emptyStack}}
+\index{emptyStack@{emptyStack}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{emptyStack()}{emptyStack()}}
+{\footnotesize\ttfamily \label{class_stack_a51485f881877aaf1f60732997f898166} 
+template$<$typename T$>$ \\
+bool \doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+empty\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns true if the stack has no Nodes, and false otherwise. 
+
+\begin{DoxyReturn}{Returns}
+True if the stack has no Nodes. False if it has at least one \doxylink{class_node}{Node}. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00055}{55}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \{}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordflow}{return}\ top\ ==\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00058\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_stack_a2b5f272eaac2bacb40d835886ac3b950}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!getSize@{getSize}}
+\index{getSize@{getSize}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_stack_a2b5f272eaac2bacb40d835886ac3b950} 
+template$<$typename T$>$ \\
+int \doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns the number of Nodes in the stack by traversing the list. 
+
+\begin{DoxyReturn}{Returns}
+The number of Nodes in the stack. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00068}{68}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069\ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ \doxymbox{\hyperlink{class_stack}{count}}\ =\ 0;}
+\DoxyCodeLine{00071\ \ \ \ \ \doxymbox{\hyperlink{class_stack}{Node<T>}}*\ \doxymbox{\hyperlink{class_stack}{tmp}}\ =\ top;}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordflow}{while}\ (\doxymbox{\hyperlink{class_stack}{tmp}}\ !=\ \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{00074\ \ \ \ \ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{count}}++;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{tmp}}\ =\ \doxymbox{\hyperlink{class_stack}{tmp}}-\/>getNext();}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_stack}{count}};}
+\DoxyCodeLine{00080\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!peek@{peek}}
+\index{peek@{peek}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{class_stack_a7ec1c3bd7b5aa9036fba8766ce9dad8e} 
+template$<$typename T$>$ \\
+T \doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns the value of the \doxylink{class_node}{Node} associated at the top of the stack. 
+
+/\+/\+/\+\texorpdfstring{$<$}{<} Returns the value of the \doxylink{class_node}{Node} at the top of the stack.
+
+If the stack is empty, then an error message is thrown. Otherwise, it returns the value inside "{}top"{}, and in the main file (\doxylink{main_8cpp}{main.\+cpp}) by using \doxylink{class_stack_a2b5f272eaac2bacb40d835886ac3b950}{get\+Size()}, it also returns the number of Nodes in the stack. This can be done through the option 3 of the menu.
+
+\begin{DoxyReturn}{Returns}
+The value stored in the top of the stack. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00155}{155}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00156\ \{}
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_stack_a51485f881877aaf1f60732997f898166}{emptyStack}}())}
+\DoxyCodeLine{00158\ \ \ \ \ \{}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \doxymbox{\hyperlink{class_stack}{runtime\_error}}(\textcolor{stringliteral}{"{}The\ stack\ has\ no\ elements\ yet!"{}});}
+\DoxyCodeLine{00160\ \ \ \ \ \}}
+\DoxyCodeLine{00161\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00162\ \ \ \ \ \{}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ top-\/>getValue();}
+\DoxyCodeLine{00164\ \ \ \ \ \}}
+\DoxyCodeLine{00165\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_stack_aa2ea0e8c3293648589dd734d52487408}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!pop@{pop}}
+\index{pop@{pop}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{class_stack_aa2ea0e8c3293648589dd734d52487408} 
+template$<$typename T$>$ \\
+T \doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Deletes the \doxylink{class_node}{Node} associated at the top of the stack. 
+
+If the stack is empty, then an error message is thrown. Otherwise, a new pointer "{}delete\+Node"{} that references to the top of the stack (pointer "{}top"{}), while another variable stores the value stored in "{}top"{} to return it.
+
+The top of the stack becomes the next \doxylink{class_node}{Node}. Finally, "{}delete\+Node"{} is deleted.
+
+\begin{DoxyReturn}{Returns}
+The value stored in the deleted \doxylink{class_node}{Node}. 
+\end{DoxyReturn}
+
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00123}{123}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_stack_a51485f881877aaf1f60732997f898166}{emptyStack}}())}
+\DoxyCodeLine{00126\ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \doxymbox{\hyperlink{class_stack}{runtime\_error}}(\textcolor{stringliteral}{"{}The\ stack\ has\ no\ elements\ yet!"{}});}
+\DoxyCodeLine{00128\ \ \ \ \ \}}
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00130\ \ \ \ \ \{}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{Node<T>}}*\ \doxymbox{\hyperlink{class_stack}{deleteNode}}\ =\ top;}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{T}}\ \doxymbox{\hyperlink{class_stack}{nodeValue}}\ =\ top-\/>getValue();}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ top\ =\ top-\/>getNext();}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ \doxymbox{\hyperlink{class_stack}{deleteNode}};}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \doxymbox{\hyperlink{class_stack}{nodeValue}};}
+\DoxyCodeLine{00137\ \ \ \ \ \}}
+\DoxyCodeLine{00138\ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_stack_a9f674f8e0d76ce2e00a157f2f11bb4e6}\index{Stack$<$ T $>$@{Stack$<$ T $>$}!push@{push}}
+\index{push@{push}!Stack$<$ T $>$@{Stack$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_stack_a9f674f8e0d76ce2e00a157f2f11bb4e6} 
+template$<$typename T$>$ \\
+void \doxymbox{\hyperlink{class_stack}{Stack}}$<$ T $>$::\+push (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_node}{Node}}$<$ T $>$ \texorpdfstring{$\ast$}{*}}]{new\+Node}{}\end{DoxyParamCaption})}
+
+
+
+Adds a new \doxylink{class_node}{Node}, with a value, to the top of the stack. 
+
+If the stack is empty, the new \doxylink{class_node}{Node} becomes the top of the stack. Otherwise, the pointer of the new \doxylink{class_node}{Node} is set to the memory address of "{}top"{}, then the new \doxylink{class_node}{Node} becomes the top.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Node} & Memory address of the new \doxylink{class_node}{Node}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \doxymbox{\hyperlink{stack_8cpp_source_l00095}{95}} of file \doxymbox{\hyperlink{stack_8cpp_source}{stack.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00096\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keywordflow}{if}\ (\doxymbox{\hyperlink{class_stack_a51485f881877aaf1f60732997f898166}{emptyStack}}())}
+\DoxyCodeLine{00098\ \ \ \ \ \{}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ top\ =\ \doxymbox{\hyperlink{class_stack}{newNode}};}
+\DoxyCodeLine{00100\ \ \ \ \ \}}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00102\ \ \ \ \ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \doxymbox{\hyperlink{class_stack}{newNode}}-\/>insertNext(top);}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ top\ =\ \doxymbox{\hyperlink{class_stack}{newNode}};}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files:\+\begin{DoxyCompactItemize}
+\item 
+headers/\+\doxymbox{\hyperlink{stack_8h}{stack.\+h}}\item 
+src/\+\doxymbox{\hyperlink{stack_8cpp}{stack.\+cpp}}\end{DoxyCompactItemize}
